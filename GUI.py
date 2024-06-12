@@ -7,6 +7,7 @@ logo_img = ctk.CTkImage(dark_image=Image.open("BOOK.png"),size=(200,200))
 
 window = ctk.CTk()
 window.geometry('500x500')
+window.resizable(False,False)
 ctk.set_appearance_mode("dark")
 ctk.set_default_color_theme("Oceanix.json")
 

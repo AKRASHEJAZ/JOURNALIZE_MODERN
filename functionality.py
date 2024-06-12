@@ -30,7 +30,7 @@ def Add_Gui(GUI):
     GUI.withdraw()
 
     win = tk.CTk()
-
+    win.resizable(False, False)
     win.geometry('500x500')
     win.title("ADD A NOTE")
 
@@ -46,7 +46,7 @@ def Add_Gui(GUI):
     Note_Input = tk.CTkTextbox(win, font=('Helvetica',20) , height=200,width=400,border_color='#0093E9',border_width=5)
     Note_Input.pack(padx = 10,pady = 10)
 
-    Add_Button = tk.CTkButton(win,text = 'ADD BUTTON',font=('Helvetica',10),command = lambda : ADD(win,GUI))
+    Add_Button = tk.CTkButton(win,text = 'ADD NOTE',font=('Helvetica',10),command = lambda : ADD(win,GUI))
     Add_Button.pack(pady = 10)
 
     Quit_Button = tk.CTkButton(win, text='QUIT TO MENU', font=('Helvetica', 10), command=lambda: Quit(win, GUI))
@@ -80,9 +80,9 @@ def Read_Gui(GUI):
             return
 
     GUI.withdraw()
-
     win = tk.CTk()
-
+    win.resizable(False, False)
+    win.resizable(False, False)
     win.geometry('500x500')
     win.title("READ A NOTE")
 
@@ -158,7 +158,7 @@ def Modify_Gui(GUI):
     GUI.withdraw()
 
     win = tk.CTk()
-
+    win.resizable(False, False)
     win.geometry('500x500')
     win.title("MODIFY A NOTE")
 
